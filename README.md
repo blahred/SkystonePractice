@@ -6,7 +6,7 @@ This is a practice assignment for programmers in Project Skystone. It is intende
 Work with the other programmers in the group to destroy the Pillar of Doom!
 
 ## Requirements 
-In the <code>main()</code> function there is a <code>PillarOfDoom</code> object, initialized with 100hp. Also in <code>main()</code> there is a group of <code>programmers</code> (<code>std::vector<Programmer*></code>). To complete this assignment you must:
+In the <code>main()</code> function there is a <code>PillarOfDoom</code> object, initialized with 1000hp. Also in <code>main()</code> there is a group of <code>programmers</code> (<code>std::vector<Programmer*></code>). To complete this assignment you must:
 
 1) Write a class called <code>{YOURNAME}Programmer</code> that inherits from <code>Programmer</code>. For the remainder of this section <code>{YOURNAME}</code> will refer to your first name. <code>{YOURNAME}</code> for me will be <code>Kevin</code> so <code>{YOURNAME}Programmer</code> will be called <code>KevinProgrammer</code>.
 
