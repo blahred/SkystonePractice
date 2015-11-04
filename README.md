@@ -22,7 +22,7 @@ In the <code>main()</code> function there is a <code>PillarOfDoom</code> object,
   
 2) Edit main.cpp
   - DO NOT PUSH TO GIT IF ANOTHER PROGRAMMER HAS MESSED WITH <code>MAIN.CPP</code>, IT CAN CREATE MERGE CONFLICTS. FIND A WAY TO COORDINATE THIS. 
-  - In the space specified, <code>Include</code> your inherited class from part 1
+  - In the space specified, <code>include</code> your inherited class from part 1
   - In the space specified, Add a <code>new</code>'d instance of your class to the the <code>programmers</code> vector. Use <code>vector.push_back()</code>
   - In the space specified, <code>delete</code> your <code>new</code>'d object.
   - DO NOT CHANGE ANY OTHER CODE OUTSIDE OF WHAT IS SPECIFIED. 
