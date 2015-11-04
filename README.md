@@ -14,7 +14,7 @@ In the <code>main()</code> function there is a <code>PillarOfDoom</code> object,
   - Define your constructor to initialize the protected member variable <code>name_</code> to a string with <code>{YOURNAME}</code>. You may need to call <code>Programmer</code>'s constructor inside of yours. 
   - Define your destructor
   - Define the function <code>damagePillar</code> with the following specification (no hard-coding please):
-    - Aaron: Accumulate the character values in name_. The values of vowels are worth 3x, else letters are worth 1x. The accumulation is the damage you do. 
+    - Aaron: Accumulate the character values in name_. The values of vowels are worth 3x, else letters are worth 1x. The accumulation/10 (integer divide by 10) is the damage you do. 
     - Christian: Sum the character values in name_. Take the 8 least significant bits of the sum, flip them, and use the resulting number (from those 8 bits) as the amount of damage you do to the pillar.
     - Harvey: Create a local variable <code>x</code>. For each <code>i</code>th character in <code>name_</code>, if <code>i</code> is even, add the character's value to <code>x</code>. If <code>i</code> is odd, subtract the character's value from <code>x</code>. The absolute value of <code>x</code> is the damage you do to the pillar. 
     - Paxton: Sum the character values in name_ and mod(%) the sum by 200. (Get damaged capped l0l). The remaining value is the damage you do to the pillar. Define 200 as a static const member. 
