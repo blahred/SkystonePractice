@@ -5,8 +5,9 @@
 #include "PillarOfDoom.h"
 #include "Programmer.h"
 
-//***YOUR CLASS INCLUDES HERE***
 
+//***YOUR CLASS INCLUDES HERE***
+#include "PaxtonProgrammer.h"
 
 
 
@@ -21,13 +22,15 @@ int main(int argc, char** argv)
 	std::vector<Programmer*> programmers;
 
 	//add a new'd instance (via pointer) of your class to the vector here. Use vector.push_back()
-
+	PaxtonProgrammer* paxton = new PaxtonProgrammer("Paxton");
+	programmers.push_back(paxton);
 
 
 
 
 	//add a new'd instance (via pointer) of your class to the vector
 
+	//for(initialization; check if this part is true; increment)
 	for (unsigned int i = 0; i < programmers.size(); ++i)
 	{
 		programmers[i]->damagePillar(pillar);
@@ -42,7 +45,7 @@ int main(int argc, char** argv)
 	}
 
 	//delete your new'd instance here
-
+	delete paxton;
 
 
 
