@@ -118,20 +118,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClCompile Include="HarveyProgrammer.cpp" />
-=======
->>>>>>> 754dc42258bbb33c851f0e5bb57e47cb8fed7824
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PaxtonProgrammer.cpp" />
     <ClCompile Include="PillarOfDoom.cpp" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ClInclude Include="HarveyProgrammer.h" />
-=======
     <ClInclude Include="PaxtonProgrammer.h" />
->>>>>>> 754dc42258bbb33c851f0e5bb57e47cb8fed7824
     <ClInclude Include="PillarOfDoom.h" />
     <ClInclude Include="Programmer.h" />
   </ItemGroup>
