@@ -118,11 +118,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="HarveyProgrammer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PaxtonProgrammer.cpp" />
     <ClCompile Include="PillarOfDoom.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HarveyProgrammer.h" />
     <ClInclude Include="PaxtonProgrammer.h" />
     <ClInclude Include="PillarOfDoom.h" />
     <ClInclude Include="Programmer.h" />
