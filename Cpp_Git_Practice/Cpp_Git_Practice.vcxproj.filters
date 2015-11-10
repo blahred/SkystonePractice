@@ -22,6 +22,8 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ChristianProgrammer.cpp">
+      <Filter>Source Files</Filter>
+	</ClCompile>
     <ClCompile Include="PaxtonProgrammer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,7 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ChristianProgrammer.h">
-    <ClInclude Include="PaxtonProgrammer.h">
+	  <Filter>Header Files</Filter>
+	</ClInclude>
+	<ClInclude Include="PaxtonProgrammer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
