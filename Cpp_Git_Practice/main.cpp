@@ -6,7 +6,7 @@
 #include "Programmer.h"
 
 //***YOUR CLASS INCLUDES HERE***
-
+#include "HarveyProgrammer.h"
 
 
 
@@ -21,8 +21,10 @@ int main(int argc, char** argv)
 	std::vector<Programmer*> programmers;
 
 	//add a new'd instance (via pointer) of your class to the vector here. Use vector.push_back()
-
-
+	Programmer *programmer;
+	programmer = new HarveyProgrammer("Harvey");
+	programmers.push_back(programmer);
+	std::cout << "Pillar Health: " << pillar.getHealth() << std::endl;
 
 
 
@@ -42,7 +44,7 @@ int main(int argc, char** argv)
 	}
 
 	//delete your new'd instance here
-
+	delete programmer;
 
 
 
