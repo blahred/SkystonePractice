@@ -7,7 +7,7 @@
 
 //***YOUR CLASS INCLUDES HERE***
 
-
+#include "ChristianProgrammer.h"
 
 
 //***YOUR CLASS INCLUDES HERE***
@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 
 	//add a new'd instance (via pointer) of your class to the vector here 
 
-
+	programmers.push_back(new ChristianProgrammer("Christian"));
 
 
 	//add a new'd instance (via pointer) of your class to the vector
@@ -34,8 +34,10 @@ int main(int argc, char** argv)
 
 	//delete your new'd instance here
 
-
-
+	for (unsigned int i = 0; i < programmers.size(); i++)
+	{
+		delete programmers[i];
+	}
 
 
 	//delete your new'd instance here

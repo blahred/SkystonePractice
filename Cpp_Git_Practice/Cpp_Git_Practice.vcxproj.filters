@@ -21,7 +21,7 @@
     <ClCompile Include="PillarOfDoom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="KevinProgrammer.cpp">
+    <ClCompile Include="ChristianProgrammer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,7 +32,7 @@
     <ClInclude Include="Programmer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="KevinProgrammer.h">
+    <ClInclude Include="ChristianProgrammer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
