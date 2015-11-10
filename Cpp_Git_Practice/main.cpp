@@ -6,11 +6,15 @@
 #include "Programmer.h"
 
 //***YOUR CLASS INCLUDES HERE***
-
+#include "HarveyProgrammer.h"
 #include "ChristianProgrammer.h"
+#include "PaxtonProgrammer.h"
+
 
 
 //***YOUR CLASS INCLUDES HERE***
+
+#define FULL_PARTY_BONUS 722
 
 int main(int argc, char** argv)
 {
@@ -18,30 +22,42 @@ int main(int argc, char** argv)
 
 	std::vector<Programmer*> programmers;
 
-	//add a new'd instance (via pointer) of your class to the vector here 
+	//add a new'd instance (via pointer) of your class to the vector here. Use vector.push_back()
+	Programmer *programmer;
+	programmer = new HarveyProgrammer("Harvey");
+	programmers.push_back(programmer);
+	std::cout << "Pillar Health: " << pillar.getHealth() << std::endl;
+	PaxtonProgrammer* paxton = new PaxtonProgrammer("Paxton");
+	programmers.push_back(paxton);
 
-	programmers.push_back(new ChristianProgrammer("Christian"));
+	Programmer* christian = new ChristianProgrammer("Christian");
+	programmers.push_back(christian);
 
 
 	//add a new'd instance (via pointer) of your class to the vector
 
+	//for(initialization; check if this part is true; increment)
 	for (unsigned int i = 0; i < programmers.size(); ++i)
 	{
 		programmers[i]->damagePillar(pillar);
 		std::cout << "Pillar has " << pillar.getHealth() << " health left!" << std::endl;
 	}
 	std::cin.ignore();
-
-	//delete your new'd instance here
-
-	for (unsigned int i = 0; i < programmers.size(); i++)
+	if (programmers.size() == 5)
 	{
-		delete programmers[i];
+		pillar.damage(FULL_PARTY_BONUS);
+		std::cout << "Pillar has " << pillar.getHealth() << " health left!" << std::endl;
+		std::cout << "Pillar defeated" << std::endl;
 	}
 
-
 	//delete your new'd instance here
 
+	delete programmer;
+	delete paxton;
+	delete christian;
+
+
+	//delete your new'd instance here
 
 	return 0;
 }
