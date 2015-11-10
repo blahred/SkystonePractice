@@ -21,11 +21,7 @@
     <ClCompile Include="PillarOfDoom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="HarveyProgrammer.cpp">
-=======
     <ClCompile Include="PaxtonProgrammer.cpp">
->>>>>>> 754dc42258bbb33c851f0e5bb57e47cb8fed7824
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -36,11 +32,7 @@
     <ClInclude Include="Programmer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="HarveyProgrammer.h">
-=======
     <ClInclude Include="PaxtonProgrammer.h">
->>>>>>> 754dc42258bbb33c851f0e5bb57e47cb8fed7824
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
