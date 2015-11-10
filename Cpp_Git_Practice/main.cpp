@@ -19,6 +19,7 @@
 int main(int argc, char** argv)
 {
 	PillarOfDoom pillar(1000);
+	std::cout << "Pillar Health: " << pillar.getHealth() << std::endl;
 
 	std::vector<Programmer*> programmers;
 
@@ -26,7 +27,7 @@ int main(int argc, char** argv)
 	Programmer *programmer;
 	programmer = new HarveyProgrammer("Harvey");
 	programmers.push_back(programmer);
-	std::cout << "Pillar Health: " << pillar.getHealth() << std::endl;
+
 	PaxtonProgrammer* paxton = new PaxtonProgrammer("Paxton");
 	programmers.push_back(paxton);
 
@@ -36,19 +37,19 @@ int main(int argc, char** argv)
 
 	//add a new'd instance (via pointer) of your class to the vector
 
-	//for(initialization; check if this part is true; increment)
 	for (unsigned int i = 0; i < programmers.size(); ++i)
 	{
 		programmers[i]->damagePillar(pillar);
 		std::cout << "Pillar has " << pillar.getHealth() << " health left!" << std::endl;
 	}
-	std::cin.ignore();
+
 	if (programmers.size() == 5)
 	{
 		pillar.damage(FULL_PARTY_BONUS);
 		std::cout << "Pillar has " << pillar.getHealth() << " health left!" << std::endl;
 		std::cout << "Pillar defeated" << std::endl;
 	}
+	std::cin.ignore();
 
 	//delete your new'd instance here
 
