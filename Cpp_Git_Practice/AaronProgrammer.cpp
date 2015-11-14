@@ -3,7 +3,7 @@
 
 AaronProgrammer::AaronProgrammer(const std::string& name) : Programmer(name)
 {
-	name_ = name;
+	//name_ = name;
 
 }
 
@@ -19,18 +19,18 @@ void AaronProgrammer::damagePillar(PillarOfDoom& pillar)
 	for (int i = 0; i < name_.length(); i += 1)
 	{
 		char fixed = tolower(name_[i]);
-		std::cout << fixed << std::endl;
+		//std::cout << fixed << std::endl;
 
 		if (fixed == 'a' || fixed == 'e' || fixed == 'i' || fixed == 'o' || fixed == 'u')
 		{
 			damage += name_[i] * 3;
-			std::cout << damage << std::endl;
+			//std::cout << damage << std::endl;
 		}
 
 		else
 		{
 			damage += name_[i];
-			std::cout << damage << std::endl;
+			//std::cout << damage << std::endl;
 		}
 	}
 	pillar.damage(damage / 10);

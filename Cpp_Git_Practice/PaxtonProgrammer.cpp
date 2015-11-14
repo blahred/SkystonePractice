@@ -14,7 +14,7 @@ PaxtonProgrammer::~PaxtonProgrammer()
 
 void PaxtonProgrammer::damagePillar(PillarOfDoom& pillar)
 {
-	std::cout << name_ << std::endl;
+	//std::cout << name_ << std::endl;
 	//result = 0
 	//for character in name_: //or for i in range(len(name_)):
 	//		result += character//		result += name_[i]
