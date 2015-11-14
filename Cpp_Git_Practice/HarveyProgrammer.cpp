@@ -1,5 +1,6 @@
 #include "HarveyProgrammer.h"
 #include <iostream>
+#include <math.h>
 
 
 HarveyProgrammer::HarveyProgrammer(const std::string &myName) 
@@ -14,15 +15,12 @@ void HarveyProgrammer::damagePillar(PillarOfDoom & pillar)
 	{
 		if (i % 2 == 0)
 			x += (int)name_[i];
-		else if (i % 2 != 0)
-		{
-			if (x < 0)
-				x *= -1;
-			
-			pillar.damage(x);
-			std::cout << x << std::endl;
-		}		
+		else
+			x -= (int)name_[i];
 	}
+
+	x = std::abs(x);
+	pillar.damage(x);
 }
 
 
