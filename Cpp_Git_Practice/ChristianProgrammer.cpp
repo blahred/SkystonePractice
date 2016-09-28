@@ -1,6 +1,7 @@
 #include "ChristianProgrammer.h"
 #include <iostream>
 
+// a comment
 
 ChristianProgrammer::ChristianProgrammer(std::string name)
 	: Programmer(name) 
